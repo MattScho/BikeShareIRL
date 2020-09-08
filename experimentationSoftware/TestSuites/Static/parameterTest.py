@@ -15,7 +15,7 @@ import glob
 
 experimentFiles = glob.glob("../../../environments/*")
 # Only use a few for testing the system, use all experiments on a powerful system
-experimentFiles = experimentFiles[:10]
+experimentFiles = experimentFiles[-10:]
 experiments = []
 
 for experimentFile in experimentFiles:
