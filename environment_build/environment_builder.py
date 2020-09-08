@@ -9,8 +9,8 @@ for systemSize in [5,10,15]:
         for budget in [0, 100, 200, 300]:
             for i in [["1", .5, .5], ["2", 5, 1], ["3", 1, 3], ["4", 2, 2], ["5", 2, 5]]:
                 for j in [["1", .5, .5], ["2", 5, 1], ["3", 1, 3], ["4", 2, 2], ["5", 2, 5]]:
-                    beta1 = BetaVariateDistribution(min=0, max=10, alpha=i[1], beta=i[2])
-                    beta2 = BetaVariateDistribution(min=0, max=10, alpha=j[1], beta=j[2])
+                    beta1 = BetaVariateDistribution(min=0, max=systemSize, alpha=i[1], beta=i[2])
+                    beta2 = BetaVariateDistribution(min=0, max=systemSize, alpha=j[1], beta=j[2])
                     users = []
                     for hour in range(24):
                         hourly = []
